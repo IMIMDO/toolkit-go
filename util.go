@@ -67,3 +67,19 @@ func Unique(xs []string) []string {
 	}
 	return out
 }
+
+// IsBlank reports whether s is empty or only whitespace.
+func IsBlank(s string) bool {
+	return len(s) == 0 || len(trimSpace(s)) == 0
+}
+
+func trimSpace(s string) string {
+	a, b := 0, len(s)
+	for a < b && (s[a] == ' ' || s[a] == '\t' || s[a] == '\n') {
+		a++
+	}
+	for b > a && (s[b-1] == ' ' || s[b-1] == '\t' || s[b-1] == '\n') {
+		b--
+	}
+	return s[a:b]
+}
