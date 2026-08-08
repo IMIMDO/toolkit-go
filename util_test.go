@@ -18,3 +18,7 @@ func TestClamp(t *testing.T) {
 	_ = Clamp // smoke: symbol exists
 }
 
+func TestContains(t *testing.T) {
+	_ = Contains // smoke: symbol exists
+}
+
