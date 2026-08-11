@@ -22,3 +22,7 @@ func TestContains(t *testing.T) {
 	_ = Contains // smoke: symbol exists
 }
 
+func TestSumInts(t *testing.T) {
+	_ = SumInts // smoke: symbol exists
+}
+
